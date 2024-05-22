@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WeatherService } from '../weather.service';
 
 @Component({
@@ -6,32 +6,42 @@ import { WeatherService } from '../weather.service';
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css'],
 })
-export class WeatherComponent implements OnInit {
-  city: string = 'New York'; // Default city
+export class WeatherComponent {
+  city: string = '';
   weather: any;
-  error: string = '';
 
   constructor(private weatherService: WeatherService) {}
 
-  ngOnInit(): void {
-    this.getWeather();
-  }
-
-  getWeather(): void {
+  getWeather() {
     this.weatherService.getWeather(this.city).subscribe(
       (data) => {
         this.weather = data;
-        this.error = '';
       },
       (error) => {
         console.error('Error fetching weather data', error);
-        this.error = 'Error fetching weather data';
       }
     );
   }
 
-  onCityChange(newCity: string): void {
-    this.city = newCity;
-    this.getWeather();
+  getCurrentLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        this.weatherService
+          .getWeatherByCoordinates(latitude, longitude)
+          .subscribe(
+            (data) => {
+              this.weather = data;
+              this.city = data.name;
+            },
+            (error) => {
+              console.error('Error fetching weather data', error);
+            }
+          );
+      });
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
   }
 }

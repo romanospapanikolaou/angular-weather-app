@@ -4,6 +4,7 @@
     <input [(ngModel)]="city" placeholder="Enter city name" />
     <button (click)="getWeather()">Get Weather</button>
   </div>
+  <button (click)="getCurrentLocation()">My Location</button>
 
   <div class="weather-info" *ngIf="weather">
     <h3>{{ weather.name }}</h3>
