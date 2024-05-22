@@ -10,7 +10,12 @@
   </div>
   <button (click)="getWeather()" class="get-weather-button">Get Weather</button>
   <button (click)="getCurrentLocation()" class="location-button">
-    My Location
+    <img
+      width="24"
+      height="24"
+      src="https://img.icons8.com/material/48/marker--v1.png"
+      alt="marker--v1"
+    />
   </button>
 
   <div class="weather-info" *ngIf="weather">
