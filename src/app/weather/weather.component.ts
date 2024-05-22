@@ -44,4 +44,22 @@ export class WeatherComponent {
       console.error('Geolocation is not supported by this browser.');
     }
   }
+  getWeatherIconDescription(weatherMain: string): string {
+    switch (weatherMain) {
+      case 'Clear':
+        return 'Clear Sky';
+      case 'Clouds':
+        return 'Cloudy';
+      case 'Rain':
+        return 'Rainy';
+      case 'Drizzle':
+        return 'Drizzling';
+      case 'Thunderstorm':
+        return 'Thunderstorm';
+      case 'Snow':
+        return 'Snowy';
+      default:
+        return 'Weather';
+    }
+  }
 }
