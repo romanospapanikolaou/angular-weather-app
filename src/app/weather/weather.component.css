@@ -5,41 +5,59 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .input-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.input-container input {
-  flex: 1;
+.city-input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
 }
 
-.input-container button {
+.get-weather-button,
+.location-button {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.get-weather-button:hover,
+.location-button:hover {
+  background-color: #0056b3;
 }
 
 .weather-info {
-  margin-top: 20px;
   text-align: center;
 }
 
-.weather-info h3 {
+.city-name {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.weather-info p {
-  margin: 5px 0;
+.temperature,
+.weather-description,
+.humidity,
+.wind-speed {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
 }
