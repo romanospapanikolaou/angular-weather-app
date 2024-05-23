@@ -1,4 +1,5 @@
 .weather-container {
+  width: 20vw;
   max-width: 400px;
   margin: auto;
   padding: 20px;
@@ -32,18 +33,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .city-input {
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 20px;
   font-size: 16px;
-  width: 80%;
-  transition: border-color 0.3s ease;
-  background-color: #ffffff;
-  color: #333;
+  width: 60%;
+  background-color: #ebf4ff;
+  color: #000000;
 }
 
 .city-input:focus {
@@ -57,7 +57,7 @@
 
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 40px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -67,20 +67,20 @@
 .get-weather-button:hover,
 .location-button:hover {
   background: linear-gradient(150deg, #1a2e4f, #4e7fb8);
-  transition: 2s;
+  transition: 0.5s;
   transform: translateY(-2px);
 }
 
 .weather-info {
   text-align: center;
   margin-top: 30px;
-  animation: fadeInUp 1s ease-in-out;
+  animation: fadeInUp 2s ease-in-out;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -91,7 +91,7 @@
 .city-name {
   font-size: 24px;
   margin-bottom: 10px;
-  color: white; /* White text */
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -121,7 +121,7 @@
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
   60% {
     transform: translateY(-5px);
