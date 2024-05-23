@@ -3,7 +3,7 @@
   margin: auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
   background: linear-gradient(135deg, #223c66, #4a90e2); /* Layers of blue */
   display: flex;
   flex-direction: column;
