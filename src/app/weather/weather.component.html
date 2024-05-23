@@ -22,6 +22,10 @@
     <h3 class="city-name">{{ weather.name }}</h3>
     <div class="weather-details">
       <div class="weather-description">
+        <i
+          [ngClass]="getWeatherIcon(weather.weather[0].main)"
+          class="weather-icon"
+        ></i>
         <p><strong>Weather:</strong> {{ weather.weather[0].description }}</p>
         <p><strong>Temperature:</strong> {{ weather.main.temp }} °C</p>
         <p><strong>Humidity:</strong> {{ weather.main.humidity }}%</p>

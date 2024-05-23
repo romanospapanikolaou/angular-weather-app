@@ -44,22 +44,26 @@ export class WeatherComponent {
       console.error('Geolocation is not supported by this browser.');
     }
   }
-  getWeatherIconDescription(weatherMain: string): string {
-    switch (weatherMain) {
-      case 'Clear':
-        return 'Clear Sky';
-      case 'Clouds':
-        return 'Cloudy';
-      case 'Rain':
-        return 'Rainy';
-      case 'Drizzle':
-        return 'Drizzling';
-      case 'Thunderstorm':
-        return 'Thunderstorm';
-      case 'Snow':
-        return 'Snowy';
-      default:
-        return 'Weather';
-    }
+
+  getWeatherIcon(condition: string): string {
+    const iconMap: { [key: string]: string } = {
+      Clear: 'wi wi-day-sunny',
+      Clouds: 'wi wi-cloudy',
+      Rain: 'wi wi-rain',
+      Drizzle: 'wi wi-sprinkle',
+      Thunderstorm: 'wi wi-thunderstorm',
+      Snow: 'wi wi-snow',
+      Mist: 'wi wi-fog',
+      Smoke: 'wi wi-smoke',
+      Haze: 'wi wi-day-haze',
+      Dust: 'wi wi-dust',
+      Fog: 'wi wi-fog',
+      Sand: 'wi wi-sandstorm',
+      Ash: 'wi wi-volcano',
+      Squall: 'wi wi-strong-wind',
+      Tornado: 'wi wi-tornado',
+    };
+
+    return iconMap[condition] || 'wi wi-na';
   }
 }

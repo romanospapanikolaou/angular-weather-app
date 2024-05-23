@@ -23,7 +23,7 @@
 }
 
 .app-title {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -120,4 +120,13 @@
   60% {
     transform: translateY(-5px);
   }
+}
+
+.weather-info i.weather-icon {
+  font-size: 80px;
+  margin-top: 20px;
+}
+
+.weather-description p {
+  margin: 10px 0;
 }
