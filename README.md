@@ -1,6 +1,6 @@
 # Angular Weather App
 
-Angular Weather App is a simple web application built with Angular that allows users to check the current weather and the forecast for any location worldwide.
+Angular Weather App is a simple web application built with Angular that allows users to check the current weather for any location worldwide.
 
 ![Weather App Screenshot](src/assets/Screenshot%201.png)
 ![Weather App Screenshot](src/assets/Screenshot%202.png)
