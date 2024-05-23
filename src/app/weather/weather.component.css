@@ -54,7 +54,7 @@
 .get-weather-button,
 .location-button {
   padding: 12px 24px;
-  background-color: #2a7bcb;
+  background: linear-gradient(150deg, #223c66, #5f9ce1);
 
   color: #fff;
   border: none;
@@ -67,8 +67,8 @@
 
 .get-weather-button:hover,
 .location-button:hover {
-  background-color: #2a5395;
-
+  background: linear-gradient(150deg, #1a2e4f, #4e7fb8);
+  transition: 2s;
   transform: translateY(-2px);
 }
 
