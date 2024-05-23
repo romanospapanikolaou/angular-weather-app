@@ -22,9 +22,9 @@
 }
 
 .app-title {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 20px;
-  color: white; /* White text */
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -40,14 +40,13 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  width: 70%;
+  width: 80%;
   transition: border-color 0.3s ease;
   background-color: #ffffff;
-  color: #333; /* Dark text inside input field */
+  color: #333;
 }
 
 .city-input:focus {
-  border-color: #007bff;
   outline: none;
 }
 
