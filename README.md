@@ -58,4 +58,5 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 ## Acknowledgements
 
 - Weather data provided by [OpenWeather](https://openweathermap.org/).
+- Background picture by [Freepik](https://www.freepik.com/).
 - Built with [Angular](https://angular.io/).
