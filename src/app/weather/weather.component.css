@@ -124,9 +124,9 @@
 
 .weather-info i.weather-icon {
   font-size: 80px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .weather-description p {
-  margin: 10px 0;
+  margin: 5px 0;
 }
