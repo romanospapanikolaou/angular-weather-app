@@ -21,20 +21,6 @@
   <div class="weather-info" *ngIf="weather">
     <h3 class="city-name">{{ weather.name }}</h3>
     <div class="weather-details">
-      <div
-        class="weather-icon"
-        [title]="getWeatherIconDescription(weather.weather[0].main)"
-      >
-        <img
-          [src]="
-            'http://openweathermap.org/img/wn/' +
-            weather.weather[0].icon +
-            '.png'
-          "
-          alt="Weather Icon"
-        />
-      </div>
-
       <div class="weather-description">
         <p><strong>Weather:</strong> {{ weather.weather[0].description }}</p>
         <p><strong>Temperature:</strong> {{ weather.main.temp }} °C</p>
