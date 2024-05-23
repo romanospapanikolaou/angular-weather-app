@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #1e3c72,
+    #2a5298
+  ); /* Blue gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white; /* Default text color to white */
+  background-image: url("../src/assets/blue-sky-with-white-cotton-clouds.jpg"); /* Adjust the path */
+  background-size: cover;
+  background-position: center;
+}
