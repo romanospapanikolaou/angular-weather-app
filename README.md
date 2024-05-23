@@ -7,7 +7,7 @@ Angular Weather App is a simple web application built with Angular that allows u
 
 ## Features
 
-- **Current Weather:** Get real-time weather information including temperature, humidity, wind speed, and weather description for any city.
+- **Current Weather:** Get real-time weather information including temperature, humidity, wind speed, latitude, longitude and weather description for any city.
 - **Search Functionality:** Easily search for weather data by city name or by your location.
 - **Responsive Design:** Enjoy a seamless experience on any device.
 
