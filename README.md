@@ -17,7 +17,7 @@ To run the Angular Weather App locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/romanospapanikolaou/angular-weather-app.git
+   git clone https://github.com/your-username/angular-weather-app.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -46,7 +46,7 @@ The Angular Weather App uses the [OpenWeatherMap API](https://openweathermap.org
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature`)
